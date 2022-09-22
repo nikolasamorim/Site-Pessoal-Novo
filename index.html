@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="shortcut icon" href="img/favicon.png">
+
+    <script src="js/main.js"></script>
+
+    <!--Animation css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!--fontAwesome-->
+    <script src="https://kit.fontawesome.com/f1b6df7d8e.js" crossorigin="anonymous"></script>
+
+    <!--JQUERY-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+    <title>Nikolas Amorim - Home</title>
+</head>
+
+<body>
+    <!-- início do preloader -->
+    <div id="preloader">
+        <div class="inner">
+            <!-- HTML DA ANIMAÇÃO MUITO LOUCA DO SEU PRELOADER! -->
+            <div class="bolas">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+    <!-- fim do preloader -->
+    <script>
+        //<![CDATA[
+        $(window).on('load', function () {
+            $('#preloader .inner').fadeOut();
+            $('#preloader').delay(350).fadeOut('slow');
+            $('body').delay(350).css({
+                'overflow': 'visible'
+            });
+        })
+            //]]>
+    </script>
+
+    <nav>
+        <div class="org-nav">
+            <ul>
+                <li><a href="#" class="logo">Nikolas Amorim </a></li>
+            </ul>
+            <ul class="header">
+                <li class="li"><a href="#before">Portifólio</a></li>
+                <li class="li"><a href="#expo">Experiência</a></li>
+                <li class="li"><a href="#">Modelos</a></li>
+                <li class="li"><a class="nav-red-but" href="#contato">Contato</a></li>
+            </ul>
+            <!--Hamburguer-->
+            <div class="org">
+                <input id="hamburguer" type="checkbox" style="display:none;">
+                <label for="hamburguer">
+                    <div class="hamburguer active"></div>
+                </label>
+                <ul class="menu active">
+                    <li><a href="#before">Portifólio</a></li>
+                    <li><a href="#expo">Experiência</a></li>
+                    <li><a href="#">Modelos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </div>
+            <script>
+                $(document).ready(function () {
+                    $(".hamburguer").click(function () {
+                        $(this).toggleClass("active");
+                        $(".menu").toggleClass("active");
+                    });
+                });
+            </script>
+        </div>
+    </nav>
+    <!--Imagem-->
+    <section id="banner" class="banner">
+        <div class="org-infos">
+            <div class="infos">
+                <h1>Nikolas Amorim <img class="bolt" src="img/Logo.png" alt="logo.png"></h1>
+                <h3>Desenvolvedor Web Full Stack</h3>
+                <img class="dev" src="img/linguagens.png" alt="linguagens.png">
+                <a href="" id="red-but"
+                    class="animate__animated animate__shakeX animate__slow	2s animate__delay-4s 4s animate__repeat-1	1">Quem
+                    sou eu?</a>
+            </div>
+        </div>
+        <img class="banner-phone" src="img/me.png" alt="foto.png">
+    </section>
+    <!--END Imagem-->
+
+    <section class="onda">
+        <div class="wave wave1"></div>
+        <div class="wave wave2"></div>
+        <div class="wave wave3"></div>
+        <div class="wave wave4"></div>
+    </section>
+
+    <section id="contato" class="contato">
+
+        <div class="container">
+            <div class="sep">
+                <div class="imagem"> <img src="img/contato.svg" alt="contato.png"></div>
+                <div class="texto">
+                    <h1>Informações de Contato</h1>
+                    <p>
+                        <a href="https://api.whatsapp.com/send?phone=5531996808425&text=Ol%C3%A1%20tudo%20bem%3F"><i
+                                class="fab fa-whatsapp"></i></a>(31) 98869-8560
+                        <br>
+                        <a href="mailto:carla@setoreletrico.com"><i
+                                style="box-shadow: -1px 0px 15px -2px #e23232;background-color: #e23232;"
+                                class="fas fa-envelope"></i></a>nikolasgabrielamorim@gmail.com<br>
+                        <a href="tel:(31) 3364-6464"><i
+                                style="box-shadow: -1px 0px 15px -2px #df387d;background-color: #df387d"
+                                class="fab fa-instagram"></i></a>@nikolas.amorim <br>
+                        <a
+                            href="https://maps.google.com/maps?ll=-19.930216,-44.037191&z=14&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=17908318895518290768"><i
+                                class="fab fa-linkedin"></i></a>Níkolas Amorim
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <section id="before" class="before">
+        <div class="who">
+            <h1>PORTIFÓLIO</h1>
+            <div class="slide">
+                Rascunho slide
+
+            </div>
+        </div>
+    </section>
+
+    <div id="up"><a href="#"><i class="fas fa-angle-up"></i></a></div>
+    <div id="wpp"><a href="https://api.whatsapp.com/send?phone=5531996808425&text=Ol%C3%A1%20tudo%20bem%3F"><i
+                class="fab fa-whatsapp"></i></a></div>
+    <div class="fundo">
+        <img src="img/fundo.png" alt="">
+    </div>
+
+    <div class="last">
+        <div>
+            Copyright© 2022 - SETOR ELÉTRICO LTDA - Made by
+            <a href="https://linktr.ee/nikolasamorim"> Níkolas Amorim </a>
+        </div>
+    </div>
+
+</body>
+
+</html>
