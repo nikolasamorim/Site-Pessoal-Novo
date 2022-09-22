@@ -22,7 +22,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color:  #9d17f7;
+    background-color: #9d17f7;
     /* cor do background que vai ocupar o body */
     z-index: 9999999;
     /* z-index para jogar para frente e sobrepor tudo */
@@ -131,7 +131,7 @@ nav {
     text-transform: uppercase;
 }
 
-.org-nav{
+.org-nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -289,11 +289,11 @@ nav ul .li a:hover {
     background-size: cover;
 }
 
-.banner-phone{
-    display: none;        
+.banner-phone {
+    display: none;
 }
 
-.org-infos{
+.org-infos {
     display: flex;
     position: relative;
     width: 90%;
@@ -319,13 +319,13 @@ nav ul .li a:hover {
     letter-spacing: 0.5px;
 }
 
-.bolt{
+.bolt {
     position: relative;
     bottom: -10px;
     width: 50px;
 }
 
-.dev{
+.dev {
     width: 200px;
 }
 
@@ -503,23 +503,90 @@ nav ul .li a:hover {
     width: 90%;
 }
 
-.who h1{
+.who h1 {
     font-size: 2rem;
     padding-bottom: 40px;
     color: #9d17f7;
     letter-spacing: 0.5px;
 }
 
-.slide{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/* SLIDERSHOW */
+
+/*carrousel*/
+#carrousel {
+    width: 80%;
+    height: 400px;
+    margin: 0 auto;
     position: relative;
-    background-color: #202020;
-    color: #fff;
-    height: 450px;
-    width: 100%;
+    overflow: hidden;
+    background-color: #0A66C2;
 }
+
+.slide {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 600px;
+    height: 400px;
+}
+
+.carrousel-picto {
+    position: absolute;
+    left: 45%;
+    bottom: 50px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.carrousel-picto li {
+    display: inline-block;
+    background-color: #ffffff;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    margin: 6px;
+    cursor: pointer;
+
+}
+
+.carrousel-picto span {
+    display: block;
+    color: transparent;
+}
+
+.carrousel-picto li:hover,
+.carrousel-picto li.active {
+    background-color: #2980b9;
+}
+
+#carrousel-nav .prev {
+    width: 54px;
+    height: 54px;
+    background-image: url('../img/left.png');
+    top: 45%;
+    left: 10%;
+    position: absolute;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+#carrousel-nav .next {
+    width: 54px;
+    height: 54px;
+    background-image: url('../img/right.png');
+    top: 45%;
+    right: 10%;
+    position: absolute;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+#carrousel-nav .prev:hover,
+#carrousel-nav .next:hover {
+    opacity: 1;
+}
+
+/* END -SLIDERSHOW */
 
 .contato {
     overflow: hidden;
@@ -528,7 +595,7 @@ nav ul .li a:hover {
     width: 100%;
 }
 
-.container {
+.container-cont {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -623,22 +690,22 @@ nav ul .li a:hover {
     grid-area: 1 / 2 / 2 / 3;
 }
 
-.container img {
+.container-cont img {
     width: 370px;
 }
 
-.container .texto {
+.container-cont .texto {
     color: rgb(255, 255, 255);
 }
 
-.container .texto h1 {
+.container-cont .texto h1 {
     margin-bottom: 50px;
     color: #9d17f7;
     font-weight: 700;
     letter-spacing: 1px;
 }
 
-.container .texto i {
+.container-cont .texto i {
     margin-right: 20px;
     margin-bottom: 20px;
     padding: 10px;
@@ -649,25 +716,25 @@ nav ul .li a:hover {
     transition: 0.6s;
 }
 
-.container .texto .fa-whatsapp {
+.container-cont .texto .fa-whatsapp {
     font-size: 1.9rem;
     box-shadow: -1px 0px 15px -2px #31BA45;
     background-color: #31BA45;
 }
 
-.container .texto .fa-instagram {
+.container-cont .texto .fa-instagram {
     font-size: 1.82rem;
     padding: 10px 12px;
 }
 
-.container .texto .fa-linkedin {
+.container-cont .texto .fa-linkedin {
     font-size: 1.8rem;
     padding: 10px 12px;
     box-shadow: -1px 0px 15px -2px #0A66C2;
     background-color: #0A66C2
 }
 
-.container .texto i:hover {
+.container-cont .texto i:hover {
     transform: scale(1.1);
 }
 
@@ -747,7 +814,7 @@ nav ul .li a:hover {
         letter-spacing: 4px;
     }
 
-    nav{
+    nav {
         padding: 50px 0px;
     }
 
@@ -761,7 +828,7 @@ nav ul .li a:hover {
         width: 320px;
     }
 
-    .banner-phone{
+    .banner-phone {
         display: block;
         position: absolute;
         z-index: -0.5;
@@ -780,7 +847,7 @@ nav ul .li a:hover {
         padding-bottom: 30px;
     }
 
-    .bolt{
+    .bolt {
         width: 150px;
         bottom: -50px;
     }
@@ -790,7 +857,7 @@ nav ul .li a:hover {
         padding-bottom: 20px;
     }
 
-    .infos .dev{
+    .infos .dev {
         width: 550px;
     }
 
@@ -866,7 +933,7 @@ nav ul .li a:hover {
     }
 
     .who {
-        width: 90%; 
+        width: 90%;
     }
 
     .who h1 {
@@ -892,52 +959,52 @@ nav ul .li a:hover {
         grid-area: 2 / 1 / 3 / 2;
     }
 
-    .container {
+    .container-cont {
         top: 10%;
     }
 
-    .container img {
+    .container-cont img {
         width: 650px;
     }
 
-    .container .texto {
+    .container-cont .texto {
         color: #fff;
         font-size: 2.7rem;
     }
 
-    .container .texto h1 {
+    .container-cont .texto h1 {
         font-size: 4rem;
     }
 
-    .container .texto i {
+    .container-cont .texto i {
         margin-right: 40px;
         margin-bottom: 40px;
         padding: 20px;
         font-size: 3.2rem;
     }
 
-    .container .texto .fa-whatsapp {
+    .container-cont .texto .fa-whatsapp {
         margin-right: 40px;
         margin-bottom: 40px;
         padding: 20px 24px;
         font-size: 3.2rem;
     }
 
-    .container .texto .fa-instagram {
+    .container-cont .texto .fa-instagram {
         font-size: 3.2rem;
         margin-right: 40px;
         margin-bottom: 40px;
         padding: 20px 25px;
     }
 
-    .container .texto .fa-linkedin {
+    .container-cont .texto .fa-linkedin {
         font-size: 3.2rem;
         margin-right: 40px;
         margin-bottom: 40px;
         padding: 20px 25px;
     }
 
-    .container .texto i:hover {
+    .container-cont .texto i:hover {
         transform: scale(1.1);
     }
 
