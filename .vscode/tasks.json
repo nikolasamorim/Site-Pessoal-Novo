@@ -6,7 +6,7 @@
         {
             "label": "buildSass",
             "type": "shell",
-            "command": "node-sass  css/main.scss css/main.css",
+            "command": "node-sass -w css/main.scss css/main.css",
             "group": "build"
         }
     ]
